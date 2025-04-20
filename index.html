@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Josephine Cao | Product Designer</title>
+  <style>
+    :root {
+      --accent: #c2185b;
+      --light-pink: #fce4ec;
+      --soft-red: #e57373;
+      --white: #fff;
+    }
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, var(--white) 0%, var(--light-pink) 100%);
+      color: #333;
+    }
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      background-color: var(--soft-red);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      background-image: url('https://www.pexels.com/photo/white-and-red-abstract-painting-1089438/download/');
+      background-size: cover;
+      background-position: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+      backdrop-filter: blur(4px);
+    }
+    header p {
+      font-size: 1.3rem;
+      margin-top: 0.5rem;
+      backdrop-filter: blur(4px);
+    }
+    section {
+      max-width: 900px;
+      margin: 3rem auto;
+      padding: 0 1.5rem;
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeInUp 0.6s forwards;
+    }
+    section:nth-of-type(2) { animation-delay: 0.2s; }
+    section:nth-of-type(3) { animation-delay: 0.4s; }
+    section:nth-of-type(4) { animation-delay: 0.6s; }
+    section:nth-of-type(5) { animation-delay: 0.8s; }
+    section:nth-of-type(6) { animation-delay: 1s; }
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    h2 {
+      color: var(--accent);
+      border-bottom: 2px solid #f8bbd0;
+      padding-bottom: 0.3rem;
+      margin-bottom: 1rem;
+    }
+    ul {
+      padding-left: 1.5rem;
+    }
+    .section-image {
+      width: 100%;
+      max-height: 300px;
+      object-fit: cover;
+      margin: 1rem 0;
+      border-radius: 16px;
+      box-shadow: 0 6px 14px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .section-image:hover {
+      transform: scale(1.03);
+    }
+    .contact a {
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .contact a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Josephine Cao</h1>
+    <p>Aspiring Product Designer</p>
+  </header>
+
+  <section>
+    <h2>About Me</h2>
+    <img class="section-image" src="https://images.pexels.com/photos/4498132/pexels-photo-4498132.jpeg" alt="About Me Visual" />
+    <p>Motivated Fine Arts student currently at LaSalle College of the Arts (Year 2). I have a strong foundation in visual design, creative ideation and hands-on making experience. I am seeking an internship opportunity in product design and development to apply my artistic sensibility and conceptual thoughts into real-world design challenges.</p>
+  </section>
+
+  <section>
+    <h2>Skills</h2>
+    <img class="section-image" src="https://images.pexels.com/photos/3861969/pexels-photo-3861969.jpeg" alt="Design Skills Visual" />
+    <ul>
+      <li>Design & Concept Development: Sketching, prototyping</li>
+      <li>Adobe Creative Suite: Photoshop, Illustrator, InDesign, Procreate, After Effects (AE)</li>
+      <li>Hands-on: Model-making, mixed media, sculptural techniques</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Work Experience</h2>
+    <img class="section-image" src="https://images.pexels.com/photos/3153204/pexels-photo-3153204.jpeg" alt="Work Experience Visual" />
+    <h3>Studio Project – LaSalle College of Arts (2024–2025)</h3>
+    <ul>
+      <li>Designed multifunctional objects blending sculpture and usability</li>
+      <li>Prototyped with clay, wood, 3D printing</li>
+      <li>Emphasized design storytelling with imagined user profiles</li>
+    </ul>
+
+    <h3>Collaborative Installation: "Urban Tensions" (2025)</h3>
+    <ul>
+      <li>Contributed installation concepts and materials</li>
+      <li>Delivered immersive product-art hybrids with team</li>
+    </ul>
+
+    <h3>Mixue – Barista Brewer (2024)</h3>
+    <ul>
+      <li>Prepared drinks with precision; managed orders and inventory</li>
+      <li>Maintained service quality in a fast-paced environment</li>
+    </ul>
+  </section>
+
+  <section>
+    <h2>Education</h2>
+    <img class="section-image" src="https://images.pexels.com/photos/7107438/pexels-photo-7107438.jpeg" alt="Education Visual" />
+    <p><strong>LaSalle College of the Arts</strong> – Bachelors Degree in Fine Arts (2023–2026)</p>
+    <p><strong>珠海艺术高中</strong> – High School (2020–2022)</p>
+  </section>
+
+  <section class="contact">
+    <h2>Contact</h2>
+    <img class="section-image" src="https://images.pexels.com/photos/3184465/pexels-photo-3184465.jpeg" alt="Contact Visual" />
+    <p>Email: <a href="mailto:cao.pengfei@mylasalle.edu.sg">cao.pengfei@mylasalle.edu.sg</a></p>
+    <p>Phone: +65 8042 6666</p>
+    <p>LinkedIn: <a href="https://www.linkedin.com/in/pengfei-cao-515a16348/" target="_blank">pengfei-cao</a></p>
+  </section>
+</body>
+</html>
+
+
