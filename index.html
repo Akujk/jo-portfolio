@@ -52,6 +52,7 @@
     section:nth-of-type(4) { animation-delay: 0.6s; }
     section:nth-of-type(5) { animation-delay: 0.8s; }
     section:nth-of-type(6) { animation-delay: 1s; }
+    section:nth-of-type(7) { animation-delay: 1.2s; }
     @keyframes fadeInUp {
       to {
         opacity: 1;
@@ -76,6 +77,28 @@
     }
     .contact a:hover {
       text-decoration: underline;
+    }
+    .project-card {
+      background: white;
+      padding: 1rem 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .project-card p {
+      margin-bottom: 1rem;
+    }
+    .project-images {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    .project-images img {
+      max-width: 100%;
+      width: 250px;
+      height: auto;
+      border-radius: 6px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
     }
   </style>
 </head>
@@ -127,12 +150,33 @@
     <p><strong>珠海艺术高中</strong> — Art-Focused High School Curriculum (2020–2022)</p>
   </section>
 
+  <section>
+    <h2>Project Spotlight</h2>
+    <div class="project-card">
+      <div class="project-images">
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p1.JPG" alt="Wood sculpture 1" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p2.JPG" alt="Wood sculpture 2" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p3.JPG" alt="Wood sculpture 3" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p4.JPG" alt="Wood sculpture 4" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p5.JPG" alt="Wood sculpture 5" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p6.JPG" alt="Wood sculpture 6" />
+        <img src="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/p7.JPG" alt="Wood sculpture 7" />
+      </div>
+    </div>
+  </section>
+
   <section class="contact">
     <h2>Let’s Connect</h2>
     <p>If you're interested in collaborating, exploring ideas, or just want to say hello, feel free to reach out:</p>
     <p>Email: <a href="mailto:cao.pengfei@mylasalle.edu.sg">cao.pengfei@mylasalle.edu.sg</a></p>
     <p>Phone: +65 8042 6666</p>
     <p>LinkedIn: <a href="https://www.linkedin.com/in/pengfei-cao-515a16348/" target="_blank">pengfei-cao</a></p>
+  
+  <section>
+    <h2>Download My Full Portfolio</h2>
+    <p>You can download a detailed PDF version of my portfolio using the link below:</p>
+    <p><a href="https://raw.githubusercontent.com/Akujk/jo-portfolio/main/Cao%20Pengfei-DG.pdf" download target="_blank">Download Portfolio PDF</a></p>
   </section>
+</section>
 </body>
 </html>
